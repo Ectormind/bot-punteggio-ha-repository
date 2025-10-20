@@ -1,0 +1,1 @@
+# bot-punteggio-ha-repository
