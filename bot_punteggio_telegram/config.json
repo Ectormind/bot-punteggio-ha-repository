@@ -23,9 +23,4 @@
     "8081/tcp": "Porta di ascolto del Webhook per Nginx Proxy Manager (Porta interna)"
   },
   "map": ["data:rw"],
-  "build": {
-    "args": {
-      "PIP_PACKAGES": "python-telegram-bot flask waitress"
-    }
-  }
 }
