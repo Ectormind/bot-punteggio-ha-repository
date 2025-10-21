@@ -1,0 +1,31 @@
+{
+  "name": "Bot Punteggio Telegram",
+  "version": "1.0.0",
+  "slug": "bot_punteggio_telegram",
+  "description": "Bot Telegram per la gestione dei punteggi con webhook.",
+  "arch": ["aarch64", "amd64"],
+  "url": "https://github.com/ectormind/bot-punteggio-ha",
+  "startup": "application",
+  "boot": "auto",
+  "host_network": true,
+  "options": {
+    "TELEGRAM_TOKEN": "7810413634:AAEeuS4tDHWas3uy90jTh8YjqWwnR7uQH7g",
+    "PORT": 8081
+  },
+  "schema": {
+    "TELEGRAM_TOKEN": "str",
+    "PORT": "int"
+  },
+  "ports": {
+    "8081/tcp": null
+  },
+  "ports_description": {
+    "8081/tcp": "Porta di ascolto del Webhook per Nginx Proxy Manager (Porta interna)"
+  },
+  "map": ["data:rw"],
+  "build": {
+    "args": {
+      "PIP_PACKAGES": "python-telegram-bot flask waitress"
+    }
+  }
+}
