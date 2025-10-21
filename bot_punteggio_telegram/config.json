@@ -22,5 +22,5 @@
   "ports_description": {
     "8081/tcp": "Porta di ascolto del Webhook per Nginx Proxy Manager (Porta interna)"
   },
-  "map": ["data:rw"],
+  "map": ["data:rw"]
 }
